@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  list-style: none;
+}
+
+body {
+  background-image: linear-gradient(
+    to left,
+    #284064,
+    #35416c,
+    #434171,
+    #544075,
+    #653e76
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  min-width: 100%;
+
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.input {
+  min-width: 35rem;
+    height: 3rem;
+  padding: 1rem 2rem;
+  /* border-radius: 0.5rem; */
+  /* border-radius: 50px; */
+  background: #e0e0e0;
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input:focus{
+    outline-color: #284064;
+}
+.search-icon{
+    position: relative;
+    right: 2rem;
+    top: 0.1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.search-list.active{
+    width: 35rem;
+    padding: 20px 30px;
+    margin-right: 1.2rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    overflow-y:scroll;
+}
+.custom{
+  margin:0.7rem 0;
+  transition: all 0.3s ease;
+  padding: 0.5rem ;
+}
+.custom:hover{
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
