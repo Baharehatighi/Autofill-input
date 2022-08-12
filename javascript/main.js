@@ -108,17 +108,20 @@ function saveToLocalStorage(userChoice) {
   userChoiceArray.push(userChoice);
   if (userChoiceArray.length >= 5) {
     userChoiceArray.shift();
-  } else {
-    userChoiceArray.push(userChoice);
-  }
+  } 
+  // else {
+  //   userChoiceArray.push(userChoice);
+  // }
 
   localStorage.setItem("userChoiceArray", JSON.stringify(userChoiceArray));
 }
-// Using items in local storage for Dom
+// Using items in local storage for dom
 function addSaveLocalToSuggestionOfUser() {
   const userChoiceArray = JSON.parse(localStorage.getItem("userChoiceArray"));
+  if(userChoiceArray){
   suggestionWordsGenerator(userChoiceArray);
   searchList.classList.add("active");
+  }
 }
 
 inputElem.addEventListener("keyup", autoFill);
