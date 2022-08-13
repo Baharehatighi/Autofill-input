@@ -21,7 +21,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 90vh;
-  min-width: 100%;
+  width: 100%;
 
 }
 .input-container {
@@ -29,7 +29,7 @@ body {
   align-items: center;
 }
 .input {
-  min-width: 35rem;
+  width: 50vw;
     height: 3rem;
   padding: 1rem 2rem;
   /* border-radius: 0.5rem; */
@@ -52,7 +52,7 @@ input:focus{
     cursor: pointer;
 }
 .search-list.active{
-    width: 35rem;
+    width: 50vw;
     padding: 20px 30px;
     margin-right: 1.2rem;
     background-color: #fff;
@@ -68,5 +68,11 @@ input:focus{
 .custom:hover{
   background-color: #e0e0e0;
   cursor: pointer;
+}
+@media (max-width:665px){
+ .search-list.active{
+  font-size: 10px;
+ }
+
 }
 
